@@ -60,6 +60,21 @@ function displayBooks() {
     read.classList.add("read");
     read.textContent = book.read ? "Yes" : "No";
 
+    const readButton = document.createElement("button");
+    readButton.textContent = book.read ? "Not Read" : "Read";
+    readButton.classList.add("read-button");
+    readButton.addEventListener("click", () => {
+      book.read = !book.read;
+      readButton.textContent = book.read ? "Not Read" : "Read";
+      read.textContent = book.read ? "Yes" : "No";
+
+      document.querySelector("#books").innerHTML = "";
+
+      // Update the read status in the library
+      displayBooks();
+    });
+    bookDiv.appendChild(readButton);
+
     bookDiv.appendChild(title);
     bookDiv.appendChild(author);
     bookDiv.appendChild(pages);
