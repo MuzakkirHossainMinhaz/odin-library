@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin - Library</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>Odin Library</h1>
+
+    <!-- book container and form -->
+    <div id="container">
+      <!-- book container -->
+      <div id="book-container">
+        <div id="books">
+          <!-- books will be added here -->
+        </div>
+      </div>
+
+      <!-- form container -->
+      <div id="form-container">
+        <form id="form">
+          <fieldset>
+            <legend>Add Book</legend>
+            <div class="input-group">
+              <label for="title">Title :</label>
+              <input type="text" id="title" name="title" required />
+            </div>
+            <div class="input-group">
+              <label for="author">Author :</label>
+              <input type="text" id="author" name="author" required />
+            </div>
+            <div class="input-group">
+              <label for="pages">Pages :</label>
+              <input type="number" id="pages" name="pages" required />
+            </div>
+            <div class="input-group">
+              <label>Read :</label>
+              <div class="radio-group">
+                <div class="radio">
+                  <input type="radio" id="yes" name="read" value="yes" />
+                  <label for="yes">Yes</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="no" name="read" value="no" />
+                  <label for="no">No</label>
+                </div>
+              </div>
+            </div>
+            <button id="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
