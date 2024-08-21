@@ -1,6 +1,6 @@
 # odin-library
 
-A library management application built as part of "The Odin Project" Intermediate HTML and CSS Course in the Full Stack JavaScript path.
+A library management application built as part of "The Odin Project" **JavaScript Course** in the Full Stack JavaScript path.
 
 ## Table of Contents
 
